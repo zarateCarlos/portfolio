@@ -1,0 +1,31 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Presentacion from "../components/Presentacion.astro";
+import Experiencia from "../components/Experiencia.astro";
+import Proyectos from "../components/Proyectos.astro";
+import AcercaDemi from "../components/AcercaDemi.astro";
+---
+
+<Layout
+  title="Portfolio de Carlos Zarate - Programador y Desarrollador Web con mas de 2 Años de Experiencia"
+>
+
+  <main>
+    <Presentacion />
+    <Experiencia />
+    <Proyectos />
+    <AcercaDemi/>
+  </main>
+
+</Layout>
+
+<style>
+  main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+</style>

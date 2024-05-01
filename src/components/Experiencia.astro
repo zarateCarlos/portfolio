@@ -1,0 +1,47 @@
+---
+import Maleta from "../icons/Maleta.astro";
+import ExpEstilo from "./ExpEstilo.astro";
+
+const EXPERIENCIAS = [
+  {
+    inicio: "julio 2023",
+    fin: "Actualidad",
+    titulo: "De Loop",
+    descripcion: "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
+    enlace: "https://deloopoficial.com",
+    tarea: "Desarrollo Web",
+  },
+  {
+    inicio: "julio 2023",
+    fin: "Actualidad",
+    titulo: "De Loop",
+    descripcion: "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
+    enlace: "https://deloopoficial.com",
+    tarea: "Desarrollo Web",
+  },
+  {
+    inicio: "julio 2023",
+    fin: "Actualidad",
+    titulo: "De Loop",
+    descripcion: "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
+    enlace: "https://deloopoficial.com",
+    tarea: "Desarrollo Web",
+  },
+];
+---
+
+<section class="w-[90%] pl-3 mx-auto mt-[100px]">
+  <h2 class="flex -ml-4 flex-row items-center gap-x-2 mb-20 text-3xl uppercase font-bold">
+    <Maleta class="size-8" />
+    Expericncia Laboral
+  </h2>
+  <ol class="relative">
+    {
+      EXPERIENCIAS.map((experiencia) => (
+        <li class="ms-4">
+          <ExpEstilo {...experiencia} />
+        </li>
+      ))
+    }
+  </ol>
+</section>

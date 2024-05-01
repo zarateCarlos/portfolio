@@ -1,0 +1,41 @@
+---
+import Disponible from "../components/Disponible.astro";
+import Social from "../components/Social.astro";
+import LinkedinIcono from "../icons/LinkedinIcono.astro";
+import GithubIcono from "../icons/GithubIcono.astro";
+import MailIcono from "../icons/MailIcono.astro"
+---
+
+<section class="w-[80%] mx-auto md:mt-[190px] md:mb-[100px]">
+    <h1 class="flex md:flex-row items-center gap-x-2 font-bold text-5xl pb-10 opacity-90">
+        Hola! Soy Carlos Zarate
+        <a
+            href="#"
+            target="_blank"
+            rel="noopener"
+            class="flex justify-center items-center"
+        >
+            <Disponible>Disponible para Trabajar</Disponible>
+        </a>
+    </h1>
+    <h3 class="w-full">
+        <span class="text-cyan-400 my-4 text-xl">Desarrollador FullStack</span> Lorem
+        ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati ducimus natus
+        eaque deleniti sequi, repudiandae iste quod nobis quis impedit saepe modi
+        id cupiditate sed quasi. Dolores dicta nulla labore.
+    </h3>
+    <nav class="flex items-center justify-center gap-x-4 mt-4 ">
+        <Social target="_blank" href="#">
+            <LinkedinIcono   class="size-6" />
+            LinkedIn
+        </Social>
+        <Social target="_blank" href="#">
+            <GithubIcono   class="size-6" />
+            Github
+        </Social>
+        <Social href="mailto:zaratecarloseduard@gmail.com">
+            <MailIcono class="size-6" />
+            zaratecarloseduard@gmail.com
+        </Social>
+    </nav>
+</section>

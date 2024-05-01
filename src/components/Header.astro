@@ -1,0 +1,45 @@
+---
+
+---
+
+<header class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-3">
+    <nav class="flex px-3 text-mm font-medium py-2  rounded-full gap-x-8 text-gray-200 justify-center items-center">
+        <a
+            class="hover:text-red-400 transition duration-300 ease-in-out text-md transform capitalize opacity-80"
+            href="#"
+        >
+            inicio
+        </a>
+        <a
+            class="hover:text-red-400 transition duration-300 ease-in-out text-md transform capitalize opacity-80"
+            href="#"
+        >
+            Experiencia
+        </a>
+        <a
+            class="hover:text-red-400 transition duration-300 ease-in-out text-md transform capitalize opacity-80"
+            href="#"
+        >
+            Proyectos
+        </a>
+        <a
+            class="hover:text-red-400 transition duration-300 ease-in-out text-md transform capitalize opacity-80"
+            href="#"
+        >
+            Acerca de Mi
+        </a>
+    </nav>
+</header>
+<style>
+    nav {
+      animation: nav-shadown 1s linear both;
+      animation-timeline: scroll();
+      animation-range: 0 100px;
+    }
+  
+    @keyframes nav-shadown {
+      to {
+        @apply shadow-lg ring-1 backdrop-blur bg-gray-800/90;
+      }
+    }
+  </style>

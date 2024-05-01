@@ -1,0 +1,53 @@
+---
+const personalImageAlt = "Carlos Zarate";
+import Codeicono from "../icons/Codeicono.astro";
+---
+
+<article class="flex md:flex-col mb-[100px]">
+  <h2
+    class="flex ml-10 flex-row items-center gap-x-2 mb-8 mt-20 text-3xl uppercase font-bold"
+  >
+    <Codeicono class="size-8" />
+    Sobre Mi
+  </h2>
+  <div
+    class="flex flex-col items-center justify-center gap-8 text-gray-300 md:flex-row"
+  >
+    <div
+      class="w-[60%] [&>p]:mb-4 [&>p>strong]:text-cyan-500 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
+    >
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis,
+        quaerat! Exercitationem ullam alias explicabo unde libero ipsum nostrum
+        totam enim!
+        <strong>Lorem ipsum dolor sit amet consectetur</strong>.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur <strong>
+          quaerat! Exercitationem ullam alias explicabo unde libero ipsum
+          nostrum totam enim</strong
+        >. quaerat! Exercitationem ullam alias explicabo unde libero ipsum
+        nostrum totam enim
+      </p>
+
+      <p>
+        Como creador de contenido, <strong
+          >quaerat! Exercitationem ullam alias explicabo unde libero ipsum
+          nostrum totam enim <em class="italic">Software & Game Development</em>
+          en Twitch</strong
+        >. quaerat! Exercitationem ullam alias explicabo unde libero ipsum
+        nostrum totam enim.
+      </p>
+    </div>
+
+    <img
+      width="200"
+      height="200"
+      src="/img1.gif"
+      alt={personalImageAlt}
+      class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-cyan-500/5 ring-1 ring-black/70 dark:ring-white/20"
+      style="object-position: 50% 50%"
+    />
+  </div>
+</article>
